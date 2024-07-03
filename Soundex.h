@@ -78,7 +78,7 @@ void generateSoundex(const char *name, char *soundex) {
         }
     }
 
-    padding(sIndex, soundex)
+    padding(sIndex, soundex);
 
     soundex[4] = '\0';
 }
