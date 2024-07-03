@@ -8,12 +8,6 @@ TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits) {
  //ASSERT_EQ(soundex,"A200");
   generateSoundex("AT", soundex);
  //ASSERT_EQ(soundex,"A300");
-}
-
-TEST2(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits) {
- //AAA
-  char soundex[5];
-  generateSoundex("BR", soundex);
+   generateSoundex("BR", soundex);
  //ASSERT_EQ(soundex,"B600");
 }
-
