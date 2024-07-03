@@ -18,4 +18,14 @@ TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits) {
  //ASSERT_EQ(soundex,"A465");
  generateSoundex("ALRU", soundex);
  //ASSERT_EQ(soundex,"A460");
+ generateSoundex("BE", soundex);
+ //ASSERT_EQ(soundex,"B000");
+ generateSoundex("CI", soundex);
+ //ASSERT_EQ(soundex,"C000");
+ generateSoundex("DA", soundex);
+ //ASSERT_EQ(soundex,"D000");
+ generateSoundex("F0", soundex);
+ //ASSERT_EQ(soundex,"F000");
+ generateSoundex("HUX", soundex);
+ //ASSERT_EQ(soundex,"H020");
 }
