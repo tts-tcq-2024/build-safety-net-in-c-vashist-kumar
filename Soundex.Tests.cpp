@@ -10,4 +10,10 @@ TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits) {
  //ASSERT_EQ(soundex,"A300");
    generateSoundex("BR", soundex);
  //ASSERT_EQ(soundex,"B600");
+   generateSoundex("CMXT", soundex);
+ //ASSERT_EQ(soundex,"B523");
+  generateSoundex("GCDL", soundex);
+ //ASSERT_EQ(soundex,"C234");
+  generateSoundex("ALRM", soundex);
+ //ASSERT_EQ(soundex,"A465");
 }
