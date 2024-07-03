@@ -67,14 +67,11 @@ bool padding(int sIndex, char *soundex){
     return true;
 }
 
-bool soundex_gen(int len, char *soundex, int sIndex,const char *name){
-    for (int i = 1; i < len && sIndex < 4; i++) {
-        char code = getSoundexCode(name[i]);
-        if (code != '0' && code != soundex[sIndex - 1]) {
+bool soundex_check(int sIndex, char *soundex,const char *name){
+    char code = getSoundexCode(name[i]);
+    if (code != '0' && code != soundex[sIndex - 1]) {
             soundex[sIndex++] = code;
         }
-    }
-    return true;
 }
 
 void generateSoundex(const char *name, char *soundex) {
@@ -82,7 +79,9 @@ void generateSoundex(const char *name, char *soundex) {
     soundex[0] = toupper(name[0]);
     int sIndex = 1;
 
-    soundex_gen(len,soundex,sIndex,name);
+    for (int i = 1; i < len && sIndex < 4; i++) {
+        soundex_check(sIndex,soundex,name);
+    }
 
     padding(sIndex,soundex);
     
