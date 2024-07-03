@@ -81,11 +81,9 @@ void generateSoundex(const char *name, char *soundex) {
     soundex[0] = toupper(name[0]);
     int sIndex = 1;
 
-    soundex_gen(len,soundex,sIndex)
+    soundex_gen(len,soundex,sIndex);
 
-    while (sIndex < 4) {
-        soundex[sIndex++] = '0';
-    }
+    padding(sIndex,soundex);
     
 }
 
