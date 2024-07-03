@@ -41,10 +41,13 @@ char CGKKQSXZ(char c){
 }
 
 char BFPV(char c){
-    if(c=='B' || c=='F' || c=='P' || c=='V'){
-        return '1';
+    char c[]={'B','F','P','V'};
+    for(int i=0;i<4;i++){
+        if(c==char[i]){
+            return '1';
+        }
     }
-    return '3';
+    return CGKKQSXZ(c);
 }
 
 char getSoundexCode(char c) {
