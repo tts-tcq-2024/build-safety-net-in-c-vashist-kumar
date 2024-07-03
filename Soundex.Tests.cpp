@@ -26,6 +26,6 @@ TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits) {
  //ASSERT_EQ(soundex,"D500");
  generateSoundex("F0", soundex);
  //ASSERT_EQ(soundex,"F000");
- generateSoundex("HUX", soundex);
- //ASSERT_EQ(soundex,"H020");
+ generateSoundex("HHHH", soundex);
+ //ASSERT_EQ(soundex,"H00");
 }
