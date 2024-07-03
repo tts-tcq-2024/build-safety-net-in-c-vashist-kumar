@@ -71,8 +71,8 @@ bool soundex_check(int sIndex, char *soundex,const char *name,char code){
     
     if (code != '0' && code != soundex[sIndex - 1]) {
             soundex[sIndex++] = code;
-        }
     return true;
+    }
 }
 
 void generateSoundex(const char *name, char *soundex) {
