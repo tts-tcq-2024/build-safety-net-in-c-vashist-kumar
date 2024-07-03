@@ -34,8 +34,11 @@ char DT(char c){
 }
 
 char CGKKQSXZ(char c){
-    if(c=='C' || c=='G' ){
-        return '2';
+    char ch[] = {'C','G','J','K','Q','S','X','Z'};
+    for(int i=0; i<8;i++){
+        if(c==ch[i]){
+            return '2';
+        }
     }
     return  DT(c);
 }
