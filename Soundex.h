@@ -5,18 +5,25 @@
 #include <ctype.h>
 #include <string.h>
 
-char BFPV(char c){
-    if(c=='B' || c=='F' || c=='P' || c=='V'){
-        return '1';
+char R(char c){
+    if(c=='R'){
+        return '6';
     }
-    return CGKKQSXZ(c);
+    return '0';
 }
 
-char CGKKQSXZ(char c){
-    if(c=='C' || c=='G' || c=='J' || c=='K' || c=='Q' || c=='S' || c=='X' || c=='Z'){
-        return '2';
+char MN(char c){
+    if(c=='N' || c=='M'){
+        return '5';
     }
-    return  DT(c);
+    return R(c);
+}
+
+char L(char c){
+    if(c=='L'){
+        return'4';
+    }
+   return MN(c);
 }
 
 char DT(char c){
@@ -26,30 +33,19 @@ char DT(char c){
     return L(c);
 }
 
-
-char L(char c){
-    if(c=='L'){
-        return'4';
+char CGKKQSXZ(char c){
+    if(c=='C' || c=='G' || c=='J' || c=='K' || c=='Q' || c=='S' || c=='X' || c=='Z'){
+        return '2';
     }
-   return MN(c);
+    return  DT(c);
 }
 
-
-char MN(char c){
-    if(c=='N' || c=='M'){
-        return '5';
+char BFPV(char c){
+    if(c=='B' || c=='F' || c=='P' || c=='V'){
+        return '1';
     }
-    return R(c);
+    return CGKKQSXZ(c);
 }
-
-
-char R(char c){
-    if(c=='R'){
-        return '6';
-    }
-    return '0';
-}
-
 
 char getSoundexCode(char c) {
     c = toupper(c);
