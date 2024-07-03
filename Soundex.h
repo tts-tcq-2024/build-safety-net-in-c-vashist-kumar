@@ -41,9 +41,9 @@ char CGKKQSXZ(char c){
 }
 
 char BFPV(char c){
-    char c[]={'B','F','P','V'};
+    char ch[]={'B','F','P','V'};
     for(int i=0;i<4;i++){
-        if(c==c[i]){
+        if(c==ch[i]){
             return '1';
         }
     }
