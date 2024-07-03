@@ -59,6 +59,13 @@ char getSoundexCode(char c) {
     
 }
 
+bool padding(int sIndex, char *soundex){
+    while (sIndex < 4) {
+        soundex[sIndex++] = '0';
+    }
+    return true;
+}
+
 void generateSoundex(const char *name, char *soundex) {
     int len = strlen(name);
     soundex[0] = toupper(name[0]);
@@ -71,9 +78,7 @@ void generateSoundex(const char *name, char *soundex) {
         }
     }
 
-    while (sIndex < 4) {
-        soundex[sIndex++] = '0';
-    }
+    padding(sIndex, soundex)
 
     soundex[4] = '\0';
 }
