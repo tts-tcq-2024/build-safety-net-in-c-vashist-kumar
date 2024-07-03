@@ -44,7 +44,7 @@ char BFPV(char c){
     if(c=='B' || c=='F' || c=='P' || c=='V'){
         return '1';
     }
-    return CGKKQSXZ(c);
+    return '3';
 }
 
 char getSoundexCode(char c) {
