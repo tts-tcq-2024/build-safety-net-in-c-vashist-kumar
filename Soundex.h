@@ -43,7 +43,7 @@ char CGKKQSXZ(char c){
 char BFPV(char c){
     char c[]={'B','F','P','V'};
     for(int i=0;i<4;i++){
-        if(c==char[i]){
+        if(c==c[i]){
             return '1';
         }
     }
