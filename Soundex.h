@@ -34,7 +34,7 @@ char DT(char c){
 }
 
 char CGKKQSXZ(char c){
-    if(c=='C' || c=='G' || c=='J' || c=='K' || c=='Q' || c=='S' || c=='X' || c=='Z'){
+    if(c=='C' || c=='G' ){
         return '2';
     }
     return  DT(c);
