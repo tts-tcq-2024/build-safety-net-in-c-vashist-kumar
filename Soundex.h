@@ -74,6 +74,7 @@ bool soundex_gen(int len, char *soundex, int sIndex,const char *name){
             soundex[sIndex++] = code;
         }
     }
+    return true;
 }
 
 void generateSoundex(const char *name, char *soundex) {
