@@ -75,7 +75,7 @@ bool soundex_check(int sIndex, char *soundex,const char *name,char code){
     }
 }
 
-void generateSoundex(const char *name, char *soundex) {
+bool generateSoundex(const char *name, char *soundex) {
     int len = strlen(name);
     soundex[0] = toupper(name[0]);
     int sIndex = 1;
@@ -86,7 +86,7 @@ void generateSoundex(const char *name, char *soundex) {
     }
 
     padding(sIndex,soundex);
-    
+    return true;
 }
 
 #endif // SOUNDEX_H
