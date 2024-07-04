@@ -26,6 +26,8 @@ TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits) {
  //ASSERT_EQ(soundex,"D100");
  generateSoundex("F0", soundex);
  //ASSERT_EQ(soundex,"F000");
+ generateSoundex("BFP", soundex);
+ //ASSERT_EQ(soundex,"B110");
  generateSoundex("", soundex);
  //ASSERT_EQ(soundex,"");
 }
