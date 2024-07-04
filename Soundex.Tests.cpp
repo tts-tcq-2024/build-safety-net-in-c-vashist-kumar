@@ -14,7 +14,7 @@ TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits) {
  //ASSERT_EQ(soundex,"B523");
   generateSoundex("GCDL", soundex);
  //ASSERT_EQ(soundex,"C234");
-  generateSoundex("ALRM", soundex);
+  generateSoundex("ALRN", soundex);
  //ASSERT_EQ(soundex,"A465");
  generateSoundex("ALRU", soundex);
  //ASSERT_EQ(soundex,"A460");
